@@ -11,7 +11,7 @@ Follow these steps:
 git clone https://github.com/AbhyudayaGup/AKT-website-new
 
 # Step 2: Navigate to the project directory.
-cd https://github.com/AbhyudayaGup/AKT-website-new
+cd AKT-website-new
 
 # Step 3: Install the necessary dependencies.
 npm install
