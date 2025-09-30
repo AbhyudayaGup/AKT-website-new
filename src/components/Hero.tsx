@@ -21,21 +21,21 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold mb-6">
-            <span className="hero-text">आकाश के तारे</span>
+            <span className="hindi-text">आकाश के तारे</span>
           </h1>
           
           {/* Subtitle */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-medium mb-4 text-foreground">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-medium mb-4 golden-text">
             Aakash Ke Taare
           </h2>
 
           {/* Tagline */}
-          <p className="text-xl md:text-2xl mb-8 text-muted-foreground font-medium">
+          <p className="text-xl md:text-2xl mb-8 warm-text font-medium">
             Together, Let's Light Up the Sky
           </p>
 
           {/* Description */}
-          <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto text-foreground leading-relaxed">
+          <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto text-white leading-relaxed">
             Empowering underprivileged youth through the magic of theatre. 
             Building confidence, creativity, and communication skills one workshop at a time.
           </p>
@@ -43,12 +43,12 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-md mx-auto">
             <div className="glass-card p-6 rounded-lg">
-              <div className="text-3xl md:text-4xl font-bold hero-text mb-2">120+</div>
-              <div className="text-muted-foreground">Students Taught</div>
+              <div className="text-3xl md:text-4xl font-bold golden-text mb-2">120+</div>
+              <div className="text-white">Students Taught</div>
             </div>
             <div className="glass-card p-6 rounded-lg">
-              <div className="text-3xl md:text-4xl font-bold hero-text mb-2">35+</div>
-              <div className="text-muted-foreground">Hours Taught</div>
+              <div className="text-3xl md:text-4xl font-bold golden-text mb-2">35+</div>
+              <div className="text-white">Hours Taught</div>
             </div>
           </div>
 

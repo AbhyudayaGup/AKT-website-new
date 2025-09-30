@@ -24,10 +24,10 @@ const Header = () => {
               <Star className="w-6 h-6 text-accent-foreground" />
             </div>
             <div>
-              <h1 className="text-xl font-heading font-bold text-foreground">
+              <h1 className="text-xl font-heading font-bold hindi-text">
                 आकाश के तारे
               </h1>
-              <p className="text-sm text-muted-foreground">Aakash Ke Taare</p>
+              <p className="text-sm warm-text">Aakash Ke Taare</p>
             </div>
           </div>
 
@@ -37,7 +37,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-200"
+                className="text-white hover:text-primary transition-colors duration-200"
               >
                 {item.name}
               </a>

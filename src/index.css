@@ -8,47 +8,49 @@ Inspired by theatre, creativity, and empowerment
 
 @layer base {
   :root {
-    /* Base colors */
-    --background: 18 15% 8%;
-    --foreground: 36 100% 96%;
+    /* Custom blue color scheme with #23547a (darker) and #366da6 (lighter) */
+    --background: 210 55% 30%; /* #23547a */
+    --foreground: 0 0% 100%; /* Pure white */
 
     /* Card and surfaces */
-    --card: 18 20% 12%;
-    --card-foreground: 36 100% 96%;
+    --card: 209 48% 42%; /* #366da6 */
+    --card-foreground: 0 0% 100%;
 
-    --popover: 18 20% 12%;
-    --popover-foreground: 36 100% 96%;
+    --popover: 209 48% 42%;
+    --popover-foreground: 0 0% 100%;
 
-    /* Brand colors - theatrical deep blue to warm orange */
-    --primary: 25 95% 65%;
-    --primary-foreground: 18 15% 8%;
-    --primary-glow: 35 100% 75%;
+    /* Golden accent colors */
+    --primary: 45 100% 70%; /* Golden */
+    --primary-foreground: 210 55% 30%;
+    --primary-glow: 45 100% 75%;
 
-    --secondary: 220 50% 15%;
-    --secondary-foreground: 36 100% 96%;
+    --secondary: 210 55% 30%; /* Darker blue */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 30% 20%;
-    --muted-foreground: 36 50% 75%;
+    --muted: 209 48% 42%; /* Lighter blue */
+    --muted-foreground: 45 100% 85%; /* Light golden */
 
-    --accent: 35 100% 75%;
-    --accent-foreground: 18 15% 8%;
+    --accent: 45 100% 65%; /* Rich golden */
+    --accent-foreground: 210 55% 30%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 36 100% 96%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 30% 25%;
-    --input: 220 30% 20%;
-    --ring: 25 95% 65%;
+    --border: 209 48% 50%;
+    --input: 209 48% 42%;
+    --ring: 45 100% 70%;
 
-    /* Theatre-inspired gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(220 50% 15%) 0%, hsl(25 95% 65%) 50%, hsl(35 100% 75%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(18 20% 12%) 0%, hsl(220 30% 20%) 100%);
-    --gradient-accent: linear-gradient(90deg, hsl(25 95% 65%) 0%, hsl(35 100% 75%) 100%);
+    /* New gradients with blue backgrounds and golden text */
+    --gradient-hero: linear-gradient(135deg, #23547a 0%, #366da6 50%, #23547a 100%);
+    --gradient-card: linear-gradient(145deg, #366da6 0%, #23547a 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(45 100% 70%) 0%, hsl(45 100% 85%) 100%);
+    --gradient-text-golden: linear-gradient(45deg, hsl(0 0% 100%) 0%, hsl(45 100% 75%) 50%, hsl(45 100% 65%) 100%);
+    --gradient-text-warm: linear-gradient(45deg, hsl(0 0% 95%) 0%, hsl(30 100% 85%) 100%);
     
-    /* Shadows and glows */
-    --shadow-warm: 0 20px 60px -10px hsl(25 95% 65% / 0.3);
-    --shadow-card: 0 10px 30px -5px hsl(220 50% 15% / 0.5);
-    --glow-primary: 0 0 40px hsl(25 95% 65% / 0.4);
+    /* Shadows and glows with new color scheme */
+    --shadow-warm: 0 20px 60px -10px hsl(45 100% 70% / 0.3);
+    --shadow-card: 0 10px 30px -5px hsl(210 55% 20% / 0.5);
+    --glow-primary: 0 0 40px hsl(45 100% 70% / 0.4);
 
     --radius: 0.5rem;
 
@@ -101,6 +103,25 @@ Inspired by theatre, creativity, and empowerment
 @layer components {
   .hero-text {
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .hindi-text {
+    background: var(--gradient-text-golden);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  
+  .golden-text {
+    @apply text-primary;
+  }
+  
+  .warm-text {
+    background: var(--gradient-text-warm);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .glass-card {

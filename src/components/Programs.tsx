@@ -40,9 +40,9 @@ const Programs = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-            <span className="hero-text">Our Programs</span>
+            <span className="golden-text">Our Programs</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
             Carefully designed workshops that nurture creativity, build confidence, 
             and unlock the potential within every child.
           </p>
@@ -56,18 +56,18 @@ const Programs = () => {
                 <div className="w-16 h-16 bg-gradient-accent rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <program.icon className="w-8 h-8 text-accent-foreground" />
                 </div>
-                <CardTitle className="text-2xl font-heading text-foreground">{program.title}</CardTitle>
-                <CardDescription className="text-muted-foreground text-lg">
+                <CardTitle className="text-2xl font-heading golden-text">{program.title}</CardTitle>
+                <CardDescription className="text-white text-lg">
                   {program.description}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-3">What We Cover:</h4>
+                    <h4 className="font-semibold warm-text mb-3">What We Cover:</h4>
                     <ul className="space-y-2">
                       {program.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-muted-foreground">
+                        <li key={featureIndex} className="flex items-center text-white">
                           <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                           {feature}
                         </li>
@@ -75,7 +75,7 @@ const Programs = () => {
                     </ul>
                   </div>
                   <div className="pt-4 border-t border-border/50">
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-white">
                       <strong>Duration:</strong> {program.duration}
                     </p>
                   </div>
@@ -87,10 +87,10 @@ const Programs = () => {
 
         {/* CTA Section */}
         <div className="text-center glass-card p-8 rounded-2xl">
-          <h3 className="text-2xl md:text-3xl font-heading font-semibold mb-4 text-foreground">
+          <h3 className="text-2xl md:text-3xl font-heading font-semibold mb-4 golden-text">
             Ready to Make a Difference?
           </h3>
-          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+          <p className="text-lg text-white mb-6 max-w-2xl mx-auto">
             Join us in our mission to empower underprivileged children through the transformative power of theatre.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
