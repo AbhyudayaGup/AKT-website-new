@@ -35,7 +35,7 @@ const About = () => {
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
             We are a passionate group of high school students dedicated to empowering 
-            underprivileged youth through transformative theatre workshops.
+            underprivileged youth through transformative workshops.
           </p>
         </div>
 

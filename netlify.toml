@@ -1,4 +1,17 @@
+import { useState } from 'react';
+import { useState } from 'react';
+import { useState } from 'react';
+import { useState } from 'react';
+import { useState } from 'react';
+import { useState } from 'react';
+import { useState } from 'react';
+import { Button } from 'react-native';
+import { Button } from 'react-native';
+import { useState } from 'react';
+import { Button } from 'react-native';
+import { useState } from 'react';
 [build]
+import { useState } from 'react';
   # Directory to publish (Vite builds to 'dist' by default)
   publish = "dist"
   

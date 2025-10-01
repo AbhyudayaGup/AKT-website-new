@@ -9,26 +9,22 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      content: "+91 999 005 9050",
-      description: "Call us during workshop hours"
+      content: "+91 99900 59050",
     },
     {
       icon: Mail,
       title: "Email",
-      content: "aakashketaare@gmail.com",
-      description: "We'll respond within 24 hours"
+      content: "bindalanshika10@gmail.com",
     },
     {
       icon: Instagram,
       title: "Instagram",
       content: "@aakash_ke_taare",
-      description: "Follow our journey and updates"
     },
     {
       icon: MapPin,
       title: "Location",
-      content: "Mumbai, India",
-      description: "Serving communities across the city"
+      content: "NCR, India",
     }
   ];
 
@@ -50,7 +46,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div>
             <h3 className="text-2xl font-heading font-semibold mb-8 text-foreground">
-              Let's Start a Conversation
+              Let's Start a Conversation!
             </h3>
             
             <div className="grid gap-6 mb-8">

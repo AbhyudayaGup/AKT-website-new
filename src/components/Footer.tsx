@@ -84,15 +84,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div>
                 <p className="text-sm warm-text">Email</p>
-                <p className="text-white">aakashketaare@gmail.com</p>
+                <p className="text-white">bindalanshika10@gmail.com</p>
               </div>
               <div>
                 <p className="text-sm warm-text">Phone</p>
-                <p className="text-white">+91 999 005 9050</p>
+                <p className="text-white">+91 99900 59050</p>
               </div>
               <div>
                 <p className="text-sm warm-text">Location</p>
-                <p className="text-white">Mumbai, India</p>
+                <p className="text-white">NCR, India</p>
               </div>
             </div>
           </div>

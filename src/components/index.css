@@ -1,4 +1,9 @@
-@tailwind base;
+import { Button } from 'react-native';
+import { Button } from 'react-native';
+import { useState, Button } from "react";import { useState, Button } from "react";import { Button } from 'react-native';
+ative';
+ative';
+
 @tailwind components;
 @tailwind utilities;
 
@@ -131,27 +136,5 @@ Inspired by theatre, creativity, and empowerment
   
   .glow-effect {
     box-shadow: var(--glow-primary);
-  }
-  
-  /* Mobile menu slide-in animation */
-  .animate-slideIn {
-    animation: slideIn 0.4s ease-out forwards;
-  }
-  
-  @keyframes slideIn {
-    0% {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  /* Remove white outline from SVG */
-  .logo-svg {
-    filter: drop-shadow(0 0 0 transparent);
-    -webkit-filter: drop-shadow(0 0 0 transparent);
   }
 }

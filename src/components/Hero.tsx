@@ -4,7 +4,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section 
+    <section
       id="home" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
@@ -18,9 +18,9 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="max-w-4xl mx-auto">
+        <div className="max--w4xl mx-auto">
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold mb-6">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold mb-6 pt-14">
             <span className="hindi-text">आकाश के तारे</span>
           </h1>
           
@@ -36,7 +36,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto text-white leading-relaxed">
-            Empowering underprivileged youth through the magic of theatre. 
+            Empowering underprivileged youth through the magic of performing arts. 
             Building confidence, creativity, and communication skills one workshop at a time.
           </p>
 
