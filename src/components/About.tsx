@@ -1,26 +1,26 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Theater, Users, Target, Heart } from "lucide-react";
+import { Theater, Users, Drum, Camera} from "lucide-react";
 
 const About = () => {
   const values = [
     {
       icon: Theater,
-      title: "Breaking Stigma",
+      title: "Theater workshops",
       description: "Transforming performing arts from a 'hobby' to a respected field of expression and growth."
     },
     {
       icon: Users,
-      title: "Community Focus",
+      title: "Dance workshops",
       description: "Building stronger communities by empowering underprivileged children through creative arts."
     },
     {
-      icon: Target,
-      title: "Skill Development",
+      icon: Drum,
+      title: "Percussion workshops",
       description: "Fostering creativity, confidence, and communication skills that last a lifetime."
     },
     {
-      icon: Heart,
-      title: "Passionate Impact",
+      icon: Camera,
+      title: "Photography workshops",
       description: "Helping children discover their hidden talents and express themselves authentically."
     }
   ];
