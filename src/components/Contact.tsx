@@ -72,12 +72,12 @@ const Contact = () => {
             <div className="grid grid-cols-3 gap-4">
               <div className="text-center glass-card p-4 rounded-lg">
                 <Clock className="w-6 h-6 mx-auto mb-2 text-primary" />
-                <div className="text-lg font-bold hero-text">35+</div>
+                <div className="text-lg font-bold hero-text">50+</div>
                 <div className="text-xs text-muted-foreground">Hours Taught</div>
               </div>
               <div className="text-center glass-card p-4 rounded-lg">
                 <Users className="w-6 h-6 mx-auto mb-2 text-primary" />
-                <div className="text-lg font-bold hero-text">120+</div>
+                <div className="text-lg font-bold hero-text">160+</div>
                 <div className="text-xs text-muted-foreground">Students</div>
               </div>
               <div className="text-center glass-card p-4 rounded-lg">
