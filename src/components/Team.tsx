@@ -45,20 +45,20 @@ const Team = () => {
       image: "SP"
     },
     {
-      name: "Rohit Gupta",
+      name: "Aalia Nath",
       role: "Technical Coordinator",
-      bio: "Rohit handles all technical aspects of our workshops and manages our digital presence and resources.",
-      email: "rohit@aakashketaare.org",
-      phone: "+91 65432 10987",
-      image: "RG"
+      bio: "Aalia brings her passion and expertise in dance to the team, using movement as a form of storytelling and expression. She inspires creativity and energy wherever she goes.",
+      email: "aalianath31@gmail.com",
+      phone: "+91 70429 70422",
+      image: "AN"
     },
     {
-      name: "Sneha Patel",
+      name: "Aryash Vaisoha",
       role: "Program Coordinator",
-      bio: "Sneha organizes and coordinates all our workshops, ensuring smooth operations and positive outcomes for participants.",
-      email: "sneha@aakashketaare.org",
-      phone: "+91 54321 09876",
-      image: "SP"
+      bio: "Aryash is a passionate and confident drummer, a enthusiast of performing arts, who loves to aspire young minds and take them to the next level step by step.",
+      email: "aryashvaisoha@gmail.com",
+      phone: "+91 98710 02663",
+      image: "AV"
     }
   ];
 
