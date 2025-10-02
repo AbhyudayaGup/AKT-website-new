@@ -37,7 +37,7 @@ const Contact = () => {
             <span className="hero-text">Get In Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Ready to bring theatre workshops to your community? Have questions about our programs? 
+            Ready to bring theatre workshops to your community? Have questions about our services? 
             We'd love to hear from you.
           </p>
         </div>

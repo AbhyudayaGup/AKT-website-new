@@ -6,7 +6,6 @@ const Header = () => {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Programs", href: "#programs" },
     { name: "Team", href: "#team" },
     { name: "Contact", href: "#contact" }
   ];
@@ -73,22 +72,23 @@ const Header = () => {
           </button>
         </div>
 
-        {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-border/50">
-            <div className="flex flex-col space-y-4 mt-4">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-foreground hover:text-primary transition-colors duration-200"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
+        {/* Mobile menu */}
+        <div className={`md:hidden mt-4 transition-all duration-300 ease-in-out ${
+          isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+        }`}>
+          <nav className="flex flex-col space-y-4 py-4 bg-black/20 rounded-lg backdrop-blur-sm">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="px-4 py-2 text-white hover:text-primary transition-colors duration-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ))}
           </nav>
-        )}
+        </div>
       </div>
     </header>
   );

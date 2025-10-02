@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: Theater,
       title: "Theater workshops",
-      description: "Transforming performing arts from a 'hobby' to a respected field of expression and growth."
+      description: "Unlock self-expression and confidence. Children learn drama skills, teamwork, and creative storytelling, transforming performing arts from hobbies into platforms for personal growth and inspirations."
     },
     {
       icon: Users,
