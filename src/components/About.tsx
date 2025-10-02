@@ -6,22 +6,22 @@ const About = () => {
     {
       icon: Theater,
       title: "Theater workshops",
-      description: "Unlock self-expression and confidence. Children learn drama skills, teamwork, and creative storytelling, transforming performing arts from hobbies into platforms for personal growth and inspirations."
+      description: "Transform performing arts from a hobby to a skill, building confidence through acting, storytelling, and creative expression in a safe space."
     },
     {
       icon: Users,
       title: "Dance workshops",
-      description: "Building stronger communities by empowering underprivileged children through creative arts."
+      description: "Empower children through the joy of dance, fostering creativity, confidence, and community connection with expressive movement."
     },
     {
       icon: Drum,
       title: "Percussion workshops",
-      description: "Fostering creativity, confidence, and communication skills that last a lifetime."
+      description: "Discover rhythm and teamwork, boosting confidence and creativity through percussion in an engaging, lifelong learning experience."
     },
     {
       icon: Camera,
       title: "Photography workshops",
-      description: "Helping children discover their hidden talents and express themselves authentically."
+      description: "Capture and celebrate creativity in performing arts, teaching children storytelling and expression through photography to showcase their talents visually."
     }
   ];
 
