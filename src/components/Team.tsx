@@ -46,7 +46,7 @@ const Team = () => {
     },
     {
       name: "Aalia Nath",
-      role: "Technical Coordinator",
+      role: "Secretary of Dance",
       bio: "Aalia brings her passion and expertise in dance to the team, using movement as a form of storytelling and expression. She inspires creativity and energy wherever she goes.",
       email: "aalianath31@gmail.com",
       phone: "+91 70429 70422",
@@ -54,7 +54,7 @@ const Team = () => {
     },
     {
       name: "Aryash Vaisoha",
-      role: "Program Coordinator",
+      role: "Head of Rhythmic Arts",
       bio: "Aryash is a passionate and confident drummer, a enthusiast of performing arts, who loves to aspire young minds and take them to the next level step by step.",
       email: "aryashvaisoha@gmail.com",
       phone: "+91 98710 02663",
