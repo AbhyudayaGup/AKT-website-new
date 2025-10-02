@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Linkedin, Instagram } from "lucide-react";
+import { Mail, Phone,} from "lucide-react";
 
 const Team = () => {
   const teamMembers = [
