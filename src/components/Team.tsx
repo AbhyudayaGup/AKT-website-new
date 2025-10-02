@@ -13,6 +13,22 @@ const Team = () => {
       image: "AB"
     },
     {
+      name: "Abhyudaya Gupta",
+      role: "Photography Head and Website Manager",
+      bio: "Meet Abhyudaya gupta who is not only the master behind the lens but also has a drive for STEM. He hosts our photography sessions and manages our website.",
+      email: "abhyudaya.gupta.ag@gmail.com",
+      phone: "+91 99587 72009",
+      image: "AG"
+    },
+    {
+      name: "Keya A Chaudhuri",
+      role: "Media Relations Manager",
+      bio: "Keya is a 11th grader passionate about connecting with others making a positive impact on her community. Her passion for artistic expressions infuses itself into her work.",
+      email: "keya@aakashketaare.org",
+      phone: "+91 92052 65954",
+      image: "KC"
+    },
+    {
       name: "Saarang Kabra",
       role: "Workshop Director",
       bio: "Saarang brings fun and positivity to every meeting while creating unique activities. His passion for theatre shines through his contributions to the team.",
@@ -21,28 +37,12 @@ const Team = () => {
       image: "SK"
     },
     {
-      name: "Keya A Chaudhuri",
-      role: "Media Relations Manager",
-      bio: "Keya manages our communications and outreach efforts, ensuring our message reaches the communities that need us most.",
-      email: "keya@aakashketaare.org",
-      phone: "+91 98765 43210",
-      image: "KC"
-    },
-    {
-      name: "Arjun Sharma",
-      role: "Creative Director",
-      bio: "Arjun leads our creative vision and workshop design, bringing innovative approaches to theatre education.",
-      email: "arjun@aakashketaare.org",
-      phone: "+91 87654 32109",
-      image: "AS"
-    },
-    {
-      name: "Priya Mehta",
-      role: "Community Outreach Coordinator",
-      bio: "Priya builds relationships with local communities and ensures our programs reach those who need them most.",
-      email: "priya@aakashketaare.org",
-      phone: "+91 76543 21098",
-      image: "PM"
+      name: "Saessha Passi",
+      role: "Marketing Head",
+      bio: "Saessha is a dedicated drama enthusiast passionate about performing arts. With talent for teaching, she actively participates in event positively impacting her community.",
+      email: "saessha.passi@gmail.com",
+      phone: "+91 98183 44402",
+      image: "SP"
     },
     {
       name: "Rohit Gupta",
