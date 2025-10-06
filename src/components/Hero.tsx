@@ -56,9 +56,16 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg"
+              asChild
             >
-              <Play className="mr-2 w-5 h-5" />
-              Watch Our Reel
+              <a 
+                href="https://www.instagram.com/reel/DKPXgFwyjPD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Play className="mr-2 w-5 h-5" />
+                Watch Our Reel
+              </a>
             </Button>
           </div>
         </div>
