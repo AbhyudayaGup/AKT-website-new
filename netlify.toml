@@ -1,17 +1,4 @@
-import { useState } from 'react';
-import { useState } from 'react';
-import { useState } from 'react';
-import { useState } from 'react';
-import { useState } from 'react';
-import { useState } from 'react';
-import { useState } from 'react';
-import { Button } from 'react-native';
-import { Button } from 'react-native';
-import { useState } from 'react';
-import { Button } from 'react-native';
-import { useState } from 'react';
 [build]
-import { useState } from 'react';
   # Directory to publish (Vite builds to 'dist' by default)
   publish = "dist"
   
@@ -27,41 +14,3 @@ import { useState } from 'react';
   from = "/*"
   to = "/index.html"
   status = 200
-
-# Security headers
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-
-# Cache static assets
-[[headers]]
-  for = "/static/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Cache assets folder
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Cache manifest and other build files
-[[headers]]
-  for = "*.js"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "*.css"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-# Don't cache HTML files
-[[headers]]
-  for = "*.html"
-  [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
