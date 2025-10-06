@@ -4,11 +4,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section
-      id="home" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-    >
-      {/* Background Image */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
@@ -16,7 +13,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/20 to-background/20" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max--w4xl mx-auto">
           {/* Main Heading */}
@@ -24,23 +20,19 @@ const Hero = () => {
             <span className="hindi-text">आकाश के तारे</span>
           </h1>
           
-          {/* Subtitle */}
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-medium mb-4 golden-text">
             Aakash Ke Taare
           </h2>
 
-          {/* Tagline */}
           <p className="text-xl md:text-2xl mb-8 warm-text font-medium">
             Together, Let's Light Up the Sky
           </p>
 
-          {/* Description */}
           <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto text-white leading-relaxed">
             Empowering underprivileged youth through the magic of performing arts. 
             Building confidence, creativity, and communication skills one workshop at a time.
           </p>
 
-          {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-md mx-auto">
             <div className="glass-card p-6 rounded-lg">
               <div className="text-3xl md:text-4xl font-bold golden-text mb-2">160+</div>
@@ -52,7 +44,6 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
@@ -67,13 +58,12 @@ const Hero = () => {
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg"
             >
               <Play className="mr-2 w-5 h-5" />
-              Watch Our Story
+              Watch Our Reel
             </Button>
           </div>
         </div>
       </div>
 
-      {/* Floating Elements */}
       <div className="absolute top-20 left-10 animate-bounce opacity-30">
         <div className="w-4 h-4 bg-accent rounded-full"></div>
       </div>
