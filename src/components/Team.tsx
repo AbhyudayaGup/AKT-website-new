@@ -63,7 +63,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-0 relative">
+    <section id="team" className="py-0 pb-8 relative">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -76,10 +76,9 @@ const Team = () => {
           </p>
         </div>
 
-        {/* Team Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <Card key={index} className="glass-card border-border/50 hover:border-primary/50 transition-all duration-300 group">
+            <Card key={index} className={`glass-card border-border/50 hover:border-primary/50 transition-all duration-300 group ${index === teamMembers.length - 1 ? 'lg:col-start-2' : ''}`}>
               <CardContent className="p-6">
                 {/* Avatar */}
                 <div className="w-24 h-24 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold text-accent-foreground group-hover:scale-110 transition-transform duration-300">

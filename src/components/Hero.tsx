@@ -74,13 +74,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute top-20 left-10 animate-bounce opacity-30">
+      <div className="absolute top-20 left-10 animate-bounce opacity-30 hidden md:block">
         <div className="w-4 h-4 bg-accent rounded-full"></div>
       </div>
-      <div className="absolute top-40 right-20 animate-bounce opacity-30" style={{ animationDelay: '0.5s' }}>
+      <div className="absolute top-40 right-20 animate-bounce opacity-30 hidden md:block" style={{ animationDelay: '0.5s' }}>
         <div className="w-6 h-6 bg-primary rounded-full"></div>
       </div>
-      <div className="absolute bottom-40 left-20 animate-bounce opacity-30" style={{ animationDelay: '1s' }}>
+      <div className="absolute bottom-40 left-20 animate-bounce opacity-30 hidden md:block" style={{ animationDelay: '1s' }}>
         <div className="w-5 h-5 bg-accent rounded-full"></div>
       </div>
     </section>

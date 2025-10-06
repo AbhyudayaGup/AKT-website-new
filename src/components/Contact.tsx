@@ -1,8 +1,10 @@
+import { Text, Image } from 'react-native';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, Instagram, MapPin, Clock, Users } from "lucide-react";
+import contactBg from "@/assets/contact.jpg";
 
 const Contact = () => {
   const contactInfo = [
@@ -29,8 +31,16 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="pt-5 pb-20 relative">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="pt-16 pb-20 relative">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${contactBg})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-background/60 to-background/85" />
+      </div>
+      
+      <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
