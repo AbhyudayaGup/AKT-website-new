@@ -48,9 +48,12 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground glow-effect group px-8 py-4 text-lg"
+              asChild
             >
-              Join Our Mission
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <a href="#contact">
+                Join Our Mission
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
             <Button 
               variant="outline" 
