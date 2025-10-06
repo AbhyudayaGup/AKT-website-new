@@ -15,7 +15,7 @@ const Contact = () => {
       icon: Mail,
       title: "Email",
       content: "bindalanshika10@gmail.com",
-    },
+    },  
     {
       icon: Instagram,
       title: "Instagram",
@@ -43,7 +43,6 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
           <div>
             <h3 className="text-2xl font-heading font-semibold mb-8 text-foreground">
               Let's Start a Conversation!
