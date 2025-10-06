@@ -120,20 +120,6 @@ const Team = () => {
           ))}
         </div>
 
-        {/* Join Team CTA */}
-        <div className="text-center mt-16">
-          <div className="glass-card p-8 rounded-2xl max-w-2xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-heading font-semibold mb-4 text-foreground">
-              Want to Join Our Mission?
-            </h3>
-            <p className="text-lg text-muted-foreground mb-6">
-              We're always looking for passionate individuals who want to make a difference in children's lives through theatre.
-            </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground glow-effect">
-              Join Our Team
-            </Button>
-          </div>
-        </div>
       </div>
     </section>
   );
