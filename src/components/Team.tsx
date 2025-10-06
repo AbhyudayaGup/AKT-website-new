@@ -63,7 +63,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-20 relative">
+    <section id="team" className="py-0 relative">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">

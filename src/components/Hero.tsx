@@ -20,7 +20,7 @@ const Hero = () => {
             <span className="hindi-text">आकाश के तारे</span>
           </h1>
           
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-heading font-medium mb-4 golden-text">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-medium mb-4 golden-text">
             Aakash Ke Taare
           </h2>
 
