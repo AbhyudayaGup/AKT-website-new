@@ -1,14 +1,19 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
+###############################################################################
+# robots.txt
+# Purpose: Allow all search engines (including Google) to crawl and index the site
+# Placement: /robots.txt at the web root (already correct for Vite public/)
+# Notes:
+# - Keep this permissive unless you need to block specific sections.
+# - Source maps and temporary files are disallowed to avoid indexing build artifacts.
+# - If you add a sitemap, include an absolute URL via the Sitemap directive.
+###############################################################################
 
 User-agent: *
 Allow: /
+
+# Avoid indexing non-content build artifacts
+Disallow: /*.map$
+Disallow: /*.tmp$
+
+# Sitemap location (replace with your live domain)
+Sitemap: https://your-domain.com/sitemap.xml
