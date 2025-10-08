@@ -16,4 +16,4 @@ Disallow: /*.map$
 Disallow: /*.tmp$
 
 # Sitemap location (replace with your live domain)
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://aakashketaare.netlify.app/sitemap.xml
