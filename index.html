@@ -21,6 +21,23 @@
 
   <body>
     <div id="root"></div>
+    <!-- Defensive shim: some browser extensions inject content scripts that reference a global
+         `browser` variable (WebExtension API) and can throw `ReferenceError: browser is not defined`.
+         Define a harmless, configurable `window.browser` early so those scripts don't crash the page.
+         This is a minimal, low-risk protection; it doesn't attempt to implement extension APIs.
+    -->
+    <script>
+      (function(){
+        if (typeof window !== 'undefined' && typeof window.browser === 'undefined') {
+          try {
+            Object.defineProperty(window, 'browser', { value: {}, configurable: true, writable: true });
+          } catch (e) {
+            // fallback for very old browsers
+            window.browser = {};
+          }
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 
