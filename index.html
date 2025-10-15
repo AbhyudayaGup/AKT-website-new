@@ -27,7 +27,6 @@
           try {
             Object.defineProperty(window, 'browser', { value: {}, configurable: true, writable: true });
           } catch (e) {
-            // fallback for very old browsers
             window.browser = {};
           }
         }
