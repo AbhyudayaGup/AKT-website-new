@@ -14,3 +14,21 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Form submission success redirect
+[[redirects]]
+  from = "/?success=true"
+  to = "/thank-you.html"
+  status = 302
+
+# Netlify Forms configuration
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = true
+[build.processing.js]
+  bundle = true
+  minify = true
+[build.processing.html]
+  pretty_urls = true

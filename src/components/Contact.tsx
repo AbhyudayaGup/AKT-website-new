@@ -1,12 +1,65 @@
-import { Text, Image } from 'react-native';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, Instagram, MapPin, Clock, Users } from "lucide-react";
 import contactBg from "@/assets/contact.jpg";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitMessage('');
+
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          'form-name': 'contact',
+          ...formData
+        }).toString()
+      });
+
+      if (response.ok) {
+        setSubmitMessage('Thank you for your message! We\'ll get back to you soon.');
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        setSubmitMessage('There was an error sending your message. Please try again.');
+      }
+    } catch (error) {
+      setSubmitMessage('There was an error sending your message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   const contactInfo = [
     {
       icon: Phone,
@@ -102,47 +155,111 @@ const Contact = () => {
             <CardHeader>
               <CardTitle className="text-2xl font-heading text-foreground">Send Us a Message</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">First Name</label>
-                  <Input placeholder="Your first name" className="bg-input border-border" />
-                </div>
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">Last Name</label>
-                  <Input placeholder="Your last name" className="bg-input border-border" />
-                </div>
-              </div>
-              
-              <div>
-                <label className="text-sm font-medium text-foreground mb-2 block">Email</label>
-                <Input type="email" placeholder="your.email@example.com" className="bg-input border-border" />
-              </div>
-              
-              <div>
-                <label className="text-sm font-medium text-foreground mb-2 block">Phone (Optional)</label>
-                <Input type="tel" placeholder="+91 12345 67890" className="bg-input border-border" />
-              </div>
-              
-              <div>
-                <label className="text-sm font-medium text-foreground mb-2 block">Subject</label>
-                <Input placeholder="Workshop inquiry, partnership, etc." className="bg-input border-border" />
-              </div>
-              
-              <div>
-                <label className="text-sm font-medium text-foreground mb-2 block">Message</label>
-                <Textarea 
-                  placeholder="Tell us about your community, organization, or how we can help..."
-                  className="bg-input border-border min-h-[120px]"
-                />
-              </div>
-              
-              <Button 
-                size="lg" 
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground glow-effect"
+            <CardContent>
+              <form 
+                name="contact" 
+                method="POST" 
+                data-netlify="true" 
+                data-netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
+                className="space-y-6"
               >
-                Send Message
-              </Button>
+                <input type="hidden" name="form-name" value="contact" />
+                <div style={{ display: 'none' }}>
+                  <label>
+                    Don't fill this out if you're human: <input name="bot-field" />
+                  </label>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium text-foreground mb-2 block">First Name</label>
+                    <Input 
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      placeholder="Your first name" 
+                      className="bg-input border-border" 
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-foreground mb-2 block">Last Name</label>
+                    <Input 
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      placeholder="Your last name" 
+                      className="bg-input border-border" 
+                      required
+                    />
+                  </div>
+                </div>
+                
+                <div>
+                  <label className="text-sm font-medium text-foreground mb-2 block">Email</label>
+                  <Input 
+                    type="email" 
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    placeholder="your.email@example.com" 
+                    className="bg-input border-border" 
+                    required
+                  />
+                </div>
+                
+                <div>
+                  <label className="text-sm font-medium text-foreground mb-2 block">Phone (Optional)</label>
+                  <Input 
+                    type="tel" 
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    placeholder="+91 12345 67890" 
+                    className="bg-input border-border" 
+                  />
+                </div>
+                
+                <div>
+                  <label className="text-sm font-medium text-foreground mb-2 block">Subject</label>
+                  <Input 
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleInputChange}
+                    placeholder="Workshop inquiry, partnership, etc." 
+                    className="bg-input border-border" 
+                    required
+                  />
+                </div>
+                
+                <div>
+                  <label className="text-sm font-medium text-foreground mb-2 block">Message</label>
+                  <Textarea 
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder="Tell us about your community, organization, or how we can help..."
+                    className="bg-input border-border min-h-[120px]"
+                    required
+                  />
+                </div>
+                
+                <Button 
+                  type="submit"
+                  size="lg" 
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground glow-effect"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </Button>
+                
+                {submitMessage && (
+                  <p className={`text-sm text-center ${submitMessage.includes('error') ? 'text-red-500' : 'text-green-500'}`}>
+                    {submitMessage}
+                  </p>
+                )}
+              </form>
             </CardContent>
           </Card>
         </div>
