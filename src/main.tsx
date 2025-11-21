@@ -1,4 +1,8 @@
 import { Text, Button, Image } from 'react-native';
+import { Text, Button, Image } from 'react-native';
+import { useState } from 'react';
+import { Text, Button, Image } from 'react-native';
+import { useState } from 'react';
 import { createRoot } from 'react-dom/client'
 import { useState } from 'react';
 import App from './App.tsx'

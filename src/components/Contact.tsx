@@ -26,19 +26,19 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitMessage('');
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
 
     try {
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          'form-name': 'contact',
-          ...formData
-        }).toString()
+        body: new URLSearchParams(formData as any).toString()
       });
 
       if (response.ok) {
@@ -55,6 +55,7 @@ const Contact = () => {
         setSubmitMessage('There was an error sending your message. Please try again.');
       }
     } catch (error) {
+      console.error('Form submission error:', error);
       setSubmitMessage('There was an error sending your message. Please try again.');
     } finally {
       setIsSubmitting(false);
