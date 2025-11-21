@@ -24,7 +24,5 @@ try {
 		console.error('Root element not found');
 	}
 } catch (err) {
-	// catch render-time errors to avoid a blank page on production
-	// eslint-disable-next-line no-console
 	console.error('Error during app bootstrap:', err);
 }
